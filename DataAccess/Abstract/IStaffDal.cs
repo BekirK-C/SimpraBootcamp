@@ -1,6 +1,9 @@
-﻿namespace DataAccess.Abstract
+﻿using DataAccess.Repository;
+using Entities.Concrete;
+
+namespace DataAccess.Abstract
 {
-    internal interface IStaffDal
+    public interface IStaffDal : IGenericRepository<Staff>
     {
     }
 }
