@@ -13,12 +13,12 @@
 > Tüm istekler karşılandı. 
 
 ## Program İçeriği
-Proje içerisinde Entities, DataAccess, Business ve WebaPI katmanları bulunmaktadır. Ödev içeriğinde verilen Staff entity ve migration konfigürsayonu için gerekli yapılanma Entities katmanında oluşturulmuştur. DataAccess katmanında SimpraDbContext ile SQL veri tabanı arasında gerekli bağlantı oluşturup migration işlemi PM console üzerinden yapılmıştır. Generic yapılanma için GenericRepository class'ında data işlemleri yapılmış ardından Business katmanında DAL işlemleri yapılmıştır. Add ve Update işlemleri için Fluent Validation kullanılmıştır. WebAPI, StaffController'da manager sınıfından staff için istenen işlemler sağlanmıştır.
+Proje içerisinde Entities, DataAccess, Business ve WebaPI katmanları bulunmaktadır. Ödev içeriğinde verilen Staff entity ve migration konfigürasyonu için gerekli yapılanma Entities katmanında oluşturulmuştur. DataAccess katmanında SimpraDbContext ile SQL veri tabanı arasında gerekli bağlantı kurulup migration işlemi PM console üzerinden yapılmıştır. Generic yapılanma için GenericRepository class'ında data işlemleri yapılmış ardından Business katmanında DAL işlemleri yapılmıştır. Add ve Update işlemleri için Fluent Validation kullanılmıştır. WebAPI, StaffController'daki HTTP istekleri manager sınıfı üzerinden sağlanmıştır.
 
 - Staff için istenen metotlar controllerda mevcuttur. 
-- Email alanı unique olarak belirlenmiştir. 
+- E-mail alanı unique olarak belirlenmiştir. 
 - Migration işlemi yapılmış ve initial_mig dosyası oluşturulmuştur. 
 - Data işlemleri için Generic repository oluşturulmuş ve ayrı sınıflar halinde business katmanında kullanılmıştır. 
-- Put ve Post metotları için Staff entity'sini doğrulayacak Fluent Validation impleemntasyonu yapılmıştır. 
+- Put ve Post metotları için Staff entity'sini doğrulayacak Fluent Validation implementasyonu yapılmıştır. 
 - FirstName ve LastName property'leri üzerinden query parameter ile Generic repository'de where komutu ile filtreleme yapılmıştır. 
 - SOLID kurallarına uygun hareket edilmiştir.
